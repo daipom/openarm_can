@@ -140,6 +140,10 @@ jobs:
         run: |
           cd packages
           rake docker:push
+      - uses: actions/upload-artifact@v5
+        with:
+          name: packages-${{ matrix.id }}
+          path: packages/${{ env.TASK_NAMESPACE }}/repositories/
 
       # Test
       - name: Test
