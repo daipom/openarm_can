@@ -27,4 +27,10 @@ repositories_dir=/host/packages/apt/repositories
 apt install -V -y \
     "${repositories_dir}"/"${distribution}"/pool/"${code_name}"/*/*/*/*_"${architecture}".deb
 
+# openarm-can-motor-check -h
+openarm-can-change-baudrate -h
+# openarm-can-configure-socketcan -h
 openarm-can-configure-socketcan-4-arms -h
+# openarm-can-set-zero
+openarm-can-zero-position-calibration -h
+# openarm-can-diagnosis -h
